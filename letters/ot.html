@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Open When... Letter 💌</title>
+  <style>
+    :root {
+      --paper:#fffafa;
+      --ink:#4a3c3c;
+      --accent:#ffafcc;
+      --shadow:rgba(255,182,193,0.35);
+      --rule:rgba(255,182,193,.18);
+    }
+    *{box-sizing:border-box;}
+    body {
+      margin:0;
+      background: radial-gradient(600px 400px at 20% 0%, #ffe5ec, transparent),
+                  radial-gradient(800px 600px at 100% 120%, #fff4f8, transparent),
+                  #fff9fb;
+      font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+      color:var(--ink);
+      display:flex;
+      justify-content:center;
+      padding:20px;
+    }
+    .letter {
+      background: var(--paper);
+      border: 1px solid #ffd6e1;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px var(--shadow), 0 1px 6px rgba(0,0,0,.04);
+      max-width: 700px;
+      width:100%;
+      padding: 32px 24px;
+      position:relative;
+    }
+    h1 {
+      text-align:center;
+      font-family: "Brush Script MT","Lucida Handwriting",cursive;
+      color:#ff6b9d;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .editable {
+      min-height: 200px;
+      width:100%;
+      padding:16px;
+      border:none;
+      outline:none;
+      resize:none;
+      background: repeating-linear-gradient(#fffafa, #fffafa 28px, var(--rule) 29px);
+      font-family: "Georgia","Times New Roman",serif;
+      font-size: 16px;
+      line-height: 28px;
+      color: var(--ink);
+    }
+    .signature {
+      margin-top:20px;
+      font-family: "Brush Script MT","Lucida Handwriting",cursive;
+      font-size: 22px;
+      color:#ff6b9d;
+      border-top:1px dashed #ffd6e1;
+      padding-top:10px;
+      text-align:right;
+      min-height:30px;
+    }
+    .hearts {
+      text-align:center;
+      margin-top:16px;
+      font-size:20px;
+      color:#ff6b9d;
+    }
+  </style>
+</head>
+<body>
+  <div class="letter">
+    <h1 contenteditable="true">Open when you need a smile 💕</h1>
+    <div class="editable" contenteditable="true">
+Write your letter here... ✍️
+    </div>
+    <div class="signature" contenteditable="true">— Your Love</div>
+    <div class="hearts">💌 💖 💌</div>
+  </div>
+</body>
+</html>
